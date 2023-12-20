@@ -42,6 +42,6 @@
     "ios >= 8"
   ],
   "dependencies": {
-    "painter-kernel": "^1.0.4",
+    "painter-kernel": "^1.0.4"
   }
 }
