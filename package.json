@@ -1,0 +1,47 @@
+{
+  "name": "painter-taro-3",
+  "description": "一个小程序图片生成库，轻松通过 json 方式绘制一张可以发到朋友圈的图片 专为taro3提供",
+  "version": "1.0.1",
+  "templateInfo": {
+    "name": "default",
+    "typescript": true,
+    "css": "sass"
+  },
+  "author": "kujiale-mobile",
+  "homepage": "https://github.com/Kujiale-Mobile/Painter#readme",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "types/index.d.ts",
+  "keywords": [
+    "Painter",
+    "taro"
+  ],
+  "files": [
+    "dist",
+    "types"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kujiale-Mobile/Painter.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "bugs": {
+    "url": "https://github.com/Kujiale-Mobile/Painter/issues"
+  },
+  "scripts": {
+    "build:ui": "TARO_BUILD_TYPE=ui taro build --ui",
+    "build:types": "node node_modules/typescript/lib/tsc.js -b ./tsconfig.json",
+    "build": "npm run build:ui && npm run build:types",
+    "prd:alpha": "npm publish --tag=alpha"
+  },
+  "browserslist": [
+    "last 3 versions",
+    "Android >= 4.1",
+    "ios >= 8"
+  ],
+  "dependencies": {
+    "painter-kernel": "^1.0.4",
+  }
+}
